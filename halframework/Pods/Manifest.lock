@@ -1,0 +1,66 @@
+PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - Differentiator (3.0.2)
+  - IQKeyboardManagerSwift (5.0.8)
+  - KeychainAccess (3.1.1)
+  - ObjectMapper (3.3.0)
+  - PureLayout (3.0.2)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Action
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.0)
+  - IQKeyboardManagerSwift (~> 5.0.0)
+  - KeychainAccess
+  - ObjectMapper (~> 3.0)
+  - PureLayout
+  - RxCocoa (~> 4.0.0)
+  - RxDataSources (~> 3.0)
+  - RxSwift (~> 4.0.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Action
+    - Alamofire
+    - AlamofireImage
+    - Differentiator
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - ObjectMapper
+    - PureLayout
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 61ff275cee9ebd35ea45355cf09a2b38eb74a4ab
+
+COCOAPODS: 1.5.3

@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B47C3E3FE5B3E8F27A0497C2 /* Pods_halframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B1EE077FD4584807492821 /* Pods_halframework.framework */; };
 		D3E10E3720D9FBA0007252B9 /* halframework.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E10E3520D9FBA0007252B9 /* halframework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF3679A3B117B78556F16551 /* Pods-halframework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-halframework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-halframework/Pods-halframework.debug.xcconfig"; sourceTree = "<group>"; };
+		C8B1EE077FD4584807492821 /* Pods_halframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_halframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E10E3220D9FBA0007252B9 /* halframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = halframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E10E3520D9FBA0007252B9 /* halframework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = halframework.h; sourceTree = "<group>"; };
 		D3E10E3620D9FBA0007252B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E934204F77A8915059CE8A07 /* Pods-halframework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-halframework.release.xcconfig"; path = "Pods/Target Support Files/Pods-halframework/Pods-halframework.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +25,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47C3E3FE5B3E8F27A0497C2 /* Pods_halframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		434D3B426666ECBCA40E3908 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF3679A3B117B78556F16551 /* Pods-halframework.debug.xcconfig */,
+				E934204F77A8915059CE8A07 /* Pods-halframework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCFBFF2303285995C3737C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8B1EE077FD4584807492821 /* Pods_halframework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3E10E2820D9FB9F007252B9 = {
 			isa = PBXGroup;
 			children = (
 				D3E10E3420D9FBA0007252B9 /* halframework */,
 				D3E10E3320D9FBA0007252B9 /* Products */,
+				434D3B426666ECBCA40E3908 /* Pods */,
+				BCFBFF2303285995C3737C92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +94,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3E10E3A20D9FBA0007252B9 /* Build configuration list for PBXNativeTarget "halframework" */;
 			buildPhases = (
+				99A52443ABA51F18246DBE1C /* [CP] Check Pods Manifest.lock */,
 				D3E10E2D20D9FB9F007252B9 /* Sources */,
 				D3E10E2E20D9FB9F007252B9 /* Frameworks */,
 				D3E10E2F20D9FB9F007252B9 /* Headers */,
@@ -124,6 +149,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99A52443ABA51F18246DBE1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-halframework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3E10E2D20D9FB9F007252B9 /* Sources */ = {
@@ -258,6 +304,7 @@
 		};
 		D3E10E3B20D9FBA0007252B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3679A3B117B78556F16551 /* Pods-halframework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +330,7 @@
 		};
 		D3E10E3C20D9FBA0007252B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E934204F77A8915059CE8A07 /* Pods-halframework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
