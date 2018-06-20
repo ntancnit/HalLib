@@ -1,0 +1,32 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+use_frameworks!
+
+target 'halframework' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'RxSwift', '~> 4.0.0'
+  pod 'RxCocoa', '~> 4.0.0'
+  pod 'RxDataSources', '~> 3.0'
+  pod 'Action'
+  pod 'Alamofire', '~> 4.0'
+  pod 'AlamofireImage', '~> 3.0'
+  pod 'ObjectMapper', '~> 3.0'
+  pod 'IQKeyboardManagerSwift', '~> 5.0.0'
+  pod 'SVProgressHUD'
+  pod 'PureLayout'
+  pod 'KeychainAccess'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['SWIFT_VERSION'] = '4.0'
+      if target.name == "Appboy-iOS-SDK"
+        config.build_settings["OTHER_LDFLAGS"] = '$(inherited) "-ObjC"'
+      end
+    end
+  end
+end
